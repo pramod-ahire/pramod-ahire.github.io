@@ -24,13 +24,18 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="assets/styles.css">
 
-  <!-- Applied before first paint so the stored theme never flashes. -->
+  <!--
+    The site is dark by default regardless of the OS setting; only an explicit
+    choice made with the toggle overrides it. Applied before first paint so a
+    stored preference never flashes.
+  -->
   <script>
     (function () {
       try {
         var stored = localStorage.getItem('theme');
-        var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-        document.documentElement.dataset.theme = stored || (prefersLight ? 'light' : 'dark');
+        if (stored === 'light' || stored === 'dark') {
+          document.documentElement.dataset.theme = stored;
+        }
       } catch (error) {
         /* Storage unavailable (private mode) — keep the default dark theme. */
       }

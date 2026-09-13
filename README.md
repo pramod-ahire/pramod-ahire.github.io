@@ -31,7 +31,8 @@ Then open <http://localhost:8000>.
 
 - **Design tokens first.** Colours, type scale and spacing live as CSS custom
   properties in `:root`; the light theme only overrides token values, never
-  component rules.
+  component rules. Dark is the default for every visitor regardless of their OS
+  setting — only the header toggle switches it, and that choice is remembered.
 - **Content in HTML.** Nothing is rendered client-side, so the page works with
   JavaScript disabled and is fully indexable.
 - **Accessibility.** Skip link, semantic landmarks, `aria-current` on the active
