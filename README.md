@@ -1,6 +1,6 @@
 # pramod-ahire.github.io
 
-Personal portfolio site for **Pramod Ahire** — Senior Frontend Engineer.
+Personal portfolio site for **Pramod Ahire** — Senior SDE.
 
 Live at **https://pramod-ahire.github.io**
 
