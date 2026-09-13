@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pramod Ahire — Senior Frontend Engineer</title>
+  <meta name="description" content="Senior frontend and full-stack engineer with 9.5 years building enterprise PostgreSQL platforms at EnterpriseDB. React, TypeScript, real-time systems, OpenFeature, and AI-agent tooling.">
+  <meta name="author" content="Pramod Ahire">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Pramod Ahire — Senior Frontend Engineer">
+  <meta property="og:description" content="9.5 years building enterprise database management platforms. React architecture at scale, real-time data interfaces, and AI-agent tooling for databases.">
+  <meta property="og:image" content="https://pramod-ahire.github.io/assets/pramod-ahire.jpg">
+  <meta property="og:url" content="https://pramod-ahire.github.io/">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="canonical" href="https://pramod-ahire.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/pramod-ahire.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Applied before first paint so the stored theme never flashes. -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        document.documentElement.dataset.theme = stored || (prefersLight ? 'light' : 'dark');
+      } catch (error) {
+        /* Storage unavailable (private mode) — keep the default dark theme. */
+      }
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pramod Ahire",
+    "jobTitle": "Senior Frontend Engineer",
+    "email": "mailto:pramod.ahire18@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+    "url": "https://pramod-ahire.github.io/",
+    "image": "https://pramod-ahire.github.io/assets/pramod-ahire.jpg",
+    "worksFor": { "@type": "Organization", "name": "EnterpriseDB" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Brahmavalley College of Engineering, Nashik" },
+    "sameAs": [
+      "https://github.com/pramod-ahire",
+      "https://www.linkedin.com/in/pramod-ahire-602a88110/"
+    ],
+    "knowsAbout": ["React", "TypeScript", "Frontend Architecture", "PostgreSQL", "OpenFeature", "Model Context Protocol", "Kubernetes"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header ======================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top">pramod<span>.</span>ahire</a>
+
+      <nav class="nav" aria-label="Section navigation">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#open-source">Open Source</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#contact">Contact</a>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero ======================================================= -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div>
+            <p class="eyebrow">Open to senior frontend roles</p>
+
+            <h1 class="hero__name">Pramod Ahire</h1>
+            <p class="hero__role">Senior Frontend Engineer · React &amp; TypeScript at enterprise scale</p>
+
+            <p class="hero__blurb">
+              I build the interfaces that engineers use to run production databases. Nine and a half
+              years of frontend and full-stack work — six of them at <strong>EnterpriseDB</strong>,
+              leading the UI for a PostgreSQL control plane that spans cloud and on-premises
+              deployments.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+                Get in touch
+              </a>
+              <a class="btn" href="https://github.com/pramod-ahire" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.31 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5Z"/></svg>
+                GitHub
+              </a>
+              <a class="btn" href="https://www.linkedin.com/in/pramod-ahire-602a88110/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.64h.06A4.17 4.17 0 0 1 16.6 8.7c4 0 4.74 2.5 4.74 5.77V21h-4v-5.63c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.19 1.46-2.19 2.97V21H9V9Z"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <figure class="hero__portrait">
+            <img src="assets/pramod-ahire.jpg" width="200" height="200"
+                 alt="Portrait of Pramod Ahire" fetchpriority="high">
+          </figure>
+        </div>
+
+        <dl class="stats" data-reveal>
+          <div class="stat">
+            <dt class="stat__label">Years in frontend &amp; full-stack</dt>
+            <dd class="stat__value">9.5</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">Years at EnterpriseDB</dt>
+            <dd class="stat__value">6</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">Design-system components shipped</dt>
+            <dd class="stat__value">150+</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">End-to-end test coverage</dt>
+            <dd class="stat__value">&gt;80%</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== About ====================================================== -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__index">01</span>
+          <h2 class="section__title">About</h2>
+        </header>
+
+        <div class="about" data-reveal>
+          <div class="about__body">
+            <p>
+              I'm a frontend and full-stack engineer in Pune, India, working on enterprise database
+              management platforms. Most of my career has been spent on one hard problem: making
+              database infrastructure legible to the people who operate it — provisioning, telemetry,
+              encryption, query performance — without the UI buckling under the volume of data behind it.
+            </p>
+            <p>
+              At EDB I lead the frontend for the <strong>EDB Postgres AI Console</strong> (formerly
+              BigAnimal). That has meant architecting React at scale, engineering real-time dashboards
+              over WebSockets, and owning features end to end — including the
+              <strong>Transparent Data Encryption</strong> UI, from problem discovery through
+              production deployment.
+            </p>
+            <p>
+              Beyond product surface, I care about the infrastructure engineers build on. I designed
+              EDB's feature-flag system on <strong>flagd / OpenFeature</strong>, migrating off a hosted
+              SaaS to remove recurring licence cost and unblock on-premises customers, and I filed a
+              credited security advisory upstream while running it in production. More recently I built
+              an <strong>MCP server</strong> that exposes EDB database clusters to AI agents through a
+              standardised tool interface.
+            </p>
+          </div>
+
+          <ul class="facts">
+            <li class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong>Based in</strong>Pune, Maharashtra, India</span>
+            </li>
+            <li class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <span><strong>Currently</strong>Senior SDE, EnterpriseDB</span>
+            </li>
+            <li class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+              <span><strong>Security</strong>Credited advisory GHSA-4c5f-9mj4-m247 (flagd)</span>
+            </li>
+            <li class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12M7 2h1"/><path d="m22 22-5-10-5 10M14 18h6"/></svg>
+              <span><strong>Languages</strong>English, Marathi, Hindi</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===================================================== -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Skills &amp; tooling</h2>
+        </header>
+
+        <div class="skills" data-reveal>
+          <article class="card skill-group">
+            <h3 class="skill-group__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+              Frontend
+            </h3>
+            <ul class="skill-group__list">
+              <li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">JavaScript</li>
+              <li class="tag">Vite</li><li class="tag">Angular</li><li class="tag">Backbone.js</li>
+              <li class="tag">HTML / CSS</li><li class="tag">SASS</li><li class="tag">CSS-in-JS</li>
+              <li class="tag">Ant Design</li><li class="tag">Micro-frontends</li><li class="tag">Design Systems</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group">
+            <h3 class="skill-group__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9"/><path d="M3 12h4M12 3v4"/><circle cx="12" cy="12" r="2"/><path d="M21 12a9 9 0 0 1-9 9"/><path d="M21 12h-4M12 21v-4"/></svg>
+              State &amp; real-time
+            </h3>
+            <ul class="skill-group__list">
+              <li class="tag">Redux Toolkit</li><li class="tag">React Query</li><li class="tag">Zustand</li>
+              <li class="tag">WebSockets</li><li class="tag">Server-Sent Events</li><li class="tag">Data Visualization</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group">
+            <h3 class="skill-group__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg>
+              Backend
+            </h3>
+            <ul class="skill-group__list">
+              <li class="tag">Node.js</li><li class="tag">Go</li><li class="tag">Protobuf</li>
+              <li class="tag">Express</li><li class="tag">Python</li><li class="tag">REST APIs</li>
+              <li class="tag">Microservices</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group">
+            <h3 class="skill-group__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="m3 7 9 5 9-5M12 22V12"/></svg>
+              Infrastructure &amp; cloud
+            </h3>
+            <ul class="skill-group__list">
+              <li class="tag">Docker</li><li class="tag">Kubernetes</li><li class="tag">CI/CD</li>
+              <li class="tag">Git</li><li class="tag">AWS</li><li class="tag">GCP</li><li class="tag">Azure</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group">
+            <h3 class="skill-group__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+              Databases
+            </h3>
+            <ul class="skill-group__list">
+              <li class="tag">PostgreSQL</li><li class="tag">MongoDB</li>
+              <li class="tag">Schema Design</li><li class="tag">Query Optimization</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group">
+            <h3 class="skill-group__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11 3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+              Testing
+            </h3>
+            <ul class="skill-group__list">
+              <li class="tag">Playwright</li><li class="tag">Jest</li>
+              <li class="tag">React Testing Library</li><li class="tag">E2E Automation</li>
+              <li class="tag">Performance Testing</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group">
+            <h3 class="skill-group__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15V5a2 2 0 0 1 2-2h9l5 5v7"/><path d="M4 19h16"/><path d="m8 19 2-4M16 19l-2-4"/></svg>
+              Feature management
+            </h3>
+            <ul class="skill-group__list">
+              <li class="tag">OpenFeature</li><li class="tag">flagd</li><li class="tag">LaunchDarkly</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group">
+            <h3 class="skill-group__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4M9 14h.01M15 14h.01M2 13h2M20 13h2"/></svg>
+              AI tooling
+            </h3>
+            <ul class="skill-group__list">
+              <li class="tag">MCP servers</li><li class="tag">Agent workflows</li>
+              <li class="tag">Claude</li><li class="tag">GitHub Copilot</li><li class="tag">Gemini</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ================================================= -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Experience</h2>
+        </header>
+
+        <div class="timeline">
+          <article class="role" data-reveal>
+            <header class="role__head">
+              <h3 class="role__company">EDB (EnterpriseDB)</h3>
+              <span class="role__period">Jun 2020 — Aug 2026 · Pune, India</span>
+            </header>
+            <p class="role__titles">
+              Senior SDE (2024–2026) · Staff SDE 1B / 1A (2021–2024) · Software Engineer (2020–2021)
+            </p>
+            <p class="role__summary">
+              Frontend and full-stack lead on the EDB Postgres AI Console (formerly BigAnimal), the
+              control plane for enterprise PostgreSQL management across cloud and on-premises
+              deployments. <em>Title realigned in Aug 2024 under a company-wide levelling change.</em>
+            </p>
+            <ul class="bullets">
+              <li>
+                <strong>Architected feature-flag infrastructure on flagd (OpenFeature)</strong> — gradual
+                rollouts, A/B testing, and instant kill switches. Evaluated alternatives, built the POC,
+                and migrated off LaunchDarkly SaaS, removing recurring licensing cost and unblocking
+                on-premises customers who could not use a hosted flag service.
+              </li>
+              <li>
+                <strong>Credited security advisory to flagd / OpenFeature</strong> (GHSA-4c5f-9mj4-m247),
+                found while running it in production.
+              </li>
+              <li>
+                <strong>Built an MCP (Model Context Protocol) server</strong> exposing EDB database
+                clusters to AI agents, enabling direct query and data retrieval through a standardised
+                tool interface.
+              </li>
+              <li>
+                <strong>Delivered the end-to-end UI for Transparent Data Encryption (TDE)</strong> — from
+                problem discovery and design through production deployment — letting customers configure
+                and manage database-level encryption from the console.
+              </li>
+              <li>
+                Architected scalable React interfaces for cluster management, provisioning, telemetry
+                monitoring, and database operations.
+              </li>
+              <li>
+                Engineered real-time query dashboards and performance monitoring over WebSockets,
+                optimising React rendering for data-intensive workflows.
+              </li>
+              <li>
+                Built end-to-end test automation with Playwright across core database functions,
+                achieving <strong>&gt;80% E2E coverage</strong> and accelerating release cycles.
+              </li>
+              <li>
+                Designed microservice interfaces and containerised UI services with Docker and
+                Kubernetes, streamlining deployment workflows.
+              </li>
+              <li>
+                Designed a design system of <strong>150+ reusable components</strong>, enabling 8 product
+                teams to ship features 40% faster.
+              </li>
+              <li>
+                Defined frontend architecture and technical standards across product areas, driving
+                reusable React state-management patterns adopted by other teams.
+              </li>
+            </ul>
+          </article>
+
+          <article class="role" data-reveal>
+            <header class="role__head">
+              <h3 class="role__company">Aexonic Technologies</h3>
+              <span class="role__period">Apr 2017 — May 2020 · Pune, India</span>
+            </header>
+            <p class="role__titles">
+              Lead Front End Developer (2019–2020) · Software Engineer / Trainee (2017–2019)
+            </p>
+            <ul class="bullets">
+              <li>
+                Led frontend development with React and Angular for multi-tenant SaaS platforms and
+                brand-protection systems.
+              </li>
+              <li>
+                Established reusable component libraries and design-system patterns with UX teams,
+                improving consistency and accelerating feature delivery.
+              </li>
+              <li>
+                Mentored junior engineers on JavaScript/TypeScript standards, code review, frontend
+                architecture, and performance optimisation.
+              </li>
+              <li>
+                Developed full-stack modules with Node.js and Python for cloud data management and API
+                design.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Open source ================================================ -->
+    <section class="section" id="open-source">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Open source</h2>
+        </header>
+
+        <div class="grid-cards" data-reveal>
+          <a class="card entry" href="https://github.com/pgadmin-org/pgadmin4" target="_blank" rel="noopener noreferrer">
+            <h3 class="entry__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+              pgAdmin 4
+            </h3>
+            <p class="entry__desc">
+              Contributor to the most widely used open-source administration and development platform
+              for PostgreSQL. Authored as <code>pramod-ahire</code>.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">PostgreSQL</span><span class="tag">Python</span><span class="tag">React</span>
+            </div>
+          </a>
+
+          <a class="card entry" href="https://github.com/open-feature/flagd" target="_blank" rel="noopener noreferrer">
+            <h3 class="entry__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15V5a2 2 0 0 1 2-2h9l5 5v7"/><path d="M4 19h16"/><path d="m8 19 2-4M16 19l-2-4"/></svg>
+              flagd / OpenFeature
+            </h3>
+            <p class="entry__desc">
+              Credited security advisory (GHSA-4c5f-9mj4-m247) and contributions to the project's
+              security practices, reported while running flagd in production at EDB.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">Go</span><span class="tag">Feature flags</span><span class="tag">Security</span>
+            </div>
+          </a>
+
+          <a class="card entry" href="https://github.com/EnterpriseDB/docs" target="_blank" rel="noopener noreferrer">
+            <h3 class="entry__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+              EnterpriseDB/docs
+            </h3>
+            <p class="entry__desc">
+              Contributor to EDB's public documentation repository, covering the Postgres AI Console and
+              related database products.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">Documentation</span><span class="tag">MDX</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects =================================================== -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__index">05</span>
+          <h2 class="section__title">Selected projects</h2>
+        </header>
+
+        <div class="grid-cards" data-reveal>
+          <article class="card entry">
+            <h3 class="entry__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.2 9.2 4.5 4.5 0 0 0 7 18.98"/><path d="M12 12v9M9 18l3 3 3-3"/></svg>
+              EDB Postgres AI Console
+            </h3>
+            <p class="entry__desc">
+              Formerly BigAnimal — the centralised cloud control plane for PostgreSQL management: cluster
+              provisioning, telemetry, encryption, and AI-driven insights. I lead the frontend.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">React</span><span class="tag">TypeScript</span>
+              <span class="tag">WebSockets</span><span class="tag">Kubernetes</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <h3 class="entry__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-5 3 3 5-7"/></svg>
+              Postgres Enterprise Manager
+            </h3>
+            <p class="entry__desc">
+              Enterprise application for PostgreSQL design, monitoring, administration, and management —
+              dense operational dashboards over live database telemetry.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">React</span><span class="tag">Data Viz</span><span class="tag">PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <h3 class="entry__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4M9 14h.01M15 14h.01M2 13h2M20 13h2"/></svg>
+              MCP server for database clusters
+            </h3>
+            <p class="entry__desc">
+              A Model Context Protocol server exposing EDB database clusters to AI agents, so assistants
+              can query and retrieve data through a standardised, permissioned tool interface.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">MCP</span><span class="tag">Node.js</span><span class="tag">AI agents</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <h3 class="entry__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v16"/></svg>
+              SaaS &amp; web platforms
+            </h3>
+            <p class="entry__desc">
+              Earlier product work across healthcare management (Tricura), brand protection
+              (SEPIO-TruSale), and financial analytics (Vistamoney).
+            </p>
+            <div class="entry__meta">
+              <span class="tag">React</span><span class="tag">Angular</span><span class="tag">Node.js</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education & speaking ======================================= -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__index">06</span>
+          <h2 class="section__title">Education &amp; community</h2>
+        </header>
+
+        <div class="meta-grid" data-reveal>
+          <article class="card entry">
+            <h3 class="entry__title">B.E. Computer Engineering</h3>
+            <p class="entry__desc">
+              Brahmavalley College of Engineering, Nashik, Maharashtra — 2016
+            </p>
+          </article>
+          <article class="card entry">
+            <h3 class="entry__title">PgConf Bangalore</h3>
+            <p class="entry__desc">PostgreSQL community conference — 2023</p>
+          </article>
+          <article class="card entry">
+            <h3 class="entry__title">KubeCon Hyderabad</h3>
+            <p class="entry__desc">Cloud-native and Kubernetes conference — 2025</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ==================================================== -->
+    <section class="section contact" id="contact">
+      <div class="wrap" data-reveal>
+        <p class="eyebrow eyebrow--center">Available for senior frontend roles</p>
+        <h2 class="contact__title">Let's build something</h2>
+        <p class="contact__blurb">
+          If you're working on a product where the interface has to hold up under real operational
+          load, I'd like to hear about it.
+        </p>
+
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:pramod.ahire18@gmail.com">pramod.ahire18@gmail.com</a>
+          <a class="btn" href="tel:+919028697679">+91 90286 97679</a>
+          <a class="btn" href="https://www.linkedin.com/in/pramod-ahire-602a88110/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="https://github.com/pramod-ahire" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ======================================================= -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>© <span id="year">2026</span> Pramod Ahire · Pune, India</p>
+      <p>Built with plain HTML, CSS and JavaScript. <a href="https://github.com/pramod-ahire/pramod-ahire.github.io">Source</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
