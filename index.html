@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Pramod Ahire — Senior Frontend Engineer</title>
-  <meta name="description" content="Senior frontend and full-stack engineer with 9.5 years building enterprise PostgreSQL platforms at EnterpriseDB. React, TypeScript, real-time systems, OpenFeature, and AI-agent tooling.">
+  <meta name="description" content="Senior frontend and full-stack engineer — 9.5 years building enterprise PostgreSQL platforms, six of them at EnterpriseDB. React, TypeScript, real-time systems, OpenFeature and AI-agent tooling.">
   <meta name="author" content="Pramod Ahire">
 
   <meta property="og:type" content="profile">
@@ -44,6 +44,7 @@
     "name": "Pramod Ahire",
     "jobTitle": "Senior Frontend Engineer",
     "email": "mailto:pramod.ahire18@gmail.com",
+    "telephone": "+91-9028697679",
     "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
     "url": "https://pramod-ahire.github.io/",
     "image": "https://pramod-ahire.github.io/assets/pramod-ahire.jpg",
@@ -60,18 +61,19 @@
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
   <!-- ===== Header ======================================================= -->
   <header class="site-header" id="site-header">
     <div class="wrap site-header__inner">
-      <a class="brand" href="#top">pramod<span>.</span>ahire</a>
+      <a class="brand" href="#top">pramod.ahire<span class="brand__caret" aria-hidden="true">_</span></a>
 
       <nav class="nav" aria-label="Section navigation">
         <a class="nav__link" href="#about">About</a>
         <a class="nav__link" href="#skills">Skills</a>
         <a class="nav__link" href="#experience">Experience</a>
-        <a class="nav__link" href="#open-source">Open Source</a>
         <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#open-source">Open Source</a>
         <a class="nav__link" href="#contact">Contact</a>
 
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle colour theme">
@@ -91,22 +93,35 @@
 
     <!-- ===== Hero ======================================================= -->
     <section class="hero" id="top">
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+
       <div class="wrap">
         <div class="hero__grid">
           <div>
-            <p class="eyebrow">Open to senior frontend roles</p>
+            <p class="eyebrow rise" style="--delay:80ms">Open to senior frontend roles</p>
 
-            <h1 class="hero__name">Pramod Ahire</h1>
-            <p class="hero__role">Senior Frontend Engineer · React &amp; TypeScript at enterprise scale</p>
+            <h1 class="hero__name rise" style="--delay:180ms">Pramod Ahire</h1>
 
-            <p class="hero__blurb">
-              I build the interfaces that engineers use to run production databases. Nine and a half
-              years of frontend and full-stack work — six of them at <strong>EnterpriseDB</strong>,
-              leading the UI for a PostgreSQL control plane that spans cloud and on-premises
-              deployments.
+            <p class="hero__role rise" style="--delay:260ms">
+              Senior Frontend Engineer · <b>React &amp; TypeScript at enterprise scale</b>
             </p>
 
-            <div class="hero__actions">
+            <p class="hero__blurb rise" style="--delay:340ms">
+              I build the interfaces engineers use to run production databases. Since 2017 I've shipped
+              frontend and full-stack work across ten products — the last six years at
+              <strong>EnterpriseDB</strong>, leading the UI for a PostgreSQL control plane that spans
+              cloud and on-premises deployments.
+            </p>
+
+            <div class="years rise" style="--delay:420ms">
+              <span class="years__value" data-count="9.5" data-decimals="1">9.5</span>
+              <span class="years__text">
+                <strong>years shipping production frontend</strong>
+                April 2017 → today · Pune, India
+              </span>
+            </div>
+
+            <div class="hero__actions rise" style="--delay:500ms">
               <a class="btn btn--primary" href="#contact">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
                 Get in touch
@@ -122,28 +137,89 @@
             </div>
           </div>
 
-          <figure class="hero__portrait">
-            <img src="assets/pramod-ahire.jpg" width="200" height="200"
+          <figure class="portrait rise" style="--delay:300ms">
+            <img src="assets/pramod-ahire.jpg" width="900" height="1350"
                  alt="Portrait of Pramod Ahire" fetchpriority="high">
+            <figcaption class="portrait__caption">
+              <span>Pune, IN</span>
+              <span>EDB · Senior SDE</span>
+            </figcaption>
           </figure>
         </div>
 
+        <!-- The nine-and-a-half years, drawn as a span rather than asserted. -->
+        <section class="rail" id="rail" aria-label="Career timeline, 2017 to today">
+          <header class="rail__head">
+            <h2 class="rail__label">Nine and a half years, end to end</h2>
+            <p class="rail__span">2017 ——— 2026</p>
+          </header>
+
+          <div class="rail__track" aria-hidden="true">
+            <div class="rail__fill"></div>
+          </div>
+
+          <ol class="rail__stops">
+            <li class="stop">
+              <span class="stop__dot" aria-hidden="true"></span>
+              <span class="stop__body">
+                <span class="stop__year">2017</span>
+                <span class="stop__note">Joined Aexonic as an engineer</span>
+              </span>
+            </li>
+            <li class="stop">
+              <span class="stop__dot" aria-hidden="true"></span>
+              <span class="stop__body">
+                <span class="stop__year">2019</span>
+                <span class="stop__note">Lead Front End Developer</span>
+              </span>
+            </li>
+            <li class="stop stop--major">
+              <span class="stop__dot" aria-hidden="true"></span>
+              <span class="stop__body">
+                <span class="stop__year">2020</span>
+                <span class="stop__note">Joined EDB · PEM &amp; pgAdmin</span>
+              </span>
+            </li>
+            <li class="stop">
+              <span class="stop__dot" aria-hidden="true"></span>
+              <span class="stop__body">
+                <span class="stop__year">2021</span>
+                <span class="stop__note">Postgres AI Console begins</span>
+              </span>
+            </li>
+            <li class="stop stop--major">
+              <span class="stop__dot" aria-hidden="true"></span>
+              <span class="stop__body">
+                <span class="stop__year">2024</span>
+                <span class="stop__note">Senior SDE · flagd rollout</span>
+              </span>
+            </li>
+            <li class="stop">
+              <span class="stop__dot" aria-hidden="true"></span>
+              <span class="stop__body">
+                <span class="stop__year">2026</span>
+                <span class="stop__note">MCP server for AI agents</span>
+              </span>
+            </li>
+          </ol>
+        </section>
+
         <dl class="stats" data-reveal>
           <div class="stat">
-            <dt class="stat__label">Years in frontend &amp; full-stack</dt>
-            <dd class="stat__value">9.5</dd>
+            <dt class="stat__label">Years shipping production frontend</dt>
+            <dd class="stat__value"><em data-count="9.5" data-decimals="1">9.5</em></dd>
           </div>
           <div class="stat">
-            <dt class="stat__label">Years at EnterpriseDB</dt>
-            <dd class="stat__value">6</dd>
+            <dt class="stat__label">Products delivered since 2017</dt>
+            <dd class="stat__value"><em data-count="10" data-suffix="+">10+</em></dd>
           </div>
           <div class="stat">
             <dt class="stat__label">Design-system components shipped</dt>
-            <dd class="stat__value">150+</dd>
+            <dd class="stat__value"><em data-count="150" data-suffix="+">150+</em></dd>
           </div>
           <div class="stat">
-            <dt class="stat__label">End-to-end test coverage</dt>
-            <dd class="stat__value">&gt;80%</dd>
+            <dt class="stat__label">End-to-end test coverage at EDB</dt>
+            <dd class="stat__value"><em data-count="80" data-suffix="%+">80%+</em></dd>
           </div>
         </dl>
       </div>
@@ -155,30 +231,36 @@
         <header class="section__head">
           <span class="section__index">01</span>
           <h2 class="section__title">About</h2>
+          <p class="section__note">9.5 yrs · Pune, India</p>
         </header>
 
         <div class="about" data-reveal>
           <div class="about__body">
             <p>
               I'm a frontend and full-stack engineer in Pune, India, working on enterprise database
-              management platforms. Most of my career has been spent on one hard problem: making
-              database infrastructure legible to the people who operate it — provisioning, telemetry,
-              encryption, query performance — without the UI buckling under the volume of data behind it.
+              management platforms. Most of my career has gone into one hard problem: making database
+              infrastructure legible to the people who operate it — provisioning, telemetry, encryption,
+              query performance — without the UI buckling under the volume of data behind it.
             </p>
             <p>
               At EDB I lead the frontend for the <strong>EDB Postgres AI Console</strong> (formerly
-              BigAnimal). That has meant architecting React at scale, engineering real-time dashboards
-              over WebSockets, and owning features end to end — including the
-              <strong>Transparent Data Encryption</strong> UI, from problem discovery through
-              production deployment.
+              BigAnimal). That has meant architecting React at scale across a microservices monorepo,
+              engineering real-time dashboards over WebSockets, and owning features end to end —
+              including the <strong>Transparent Data Encryption</strong> UI, from problem discovery
+              through production deployment.
             </p>
             <p>
               Beyond product surface, I care about the infrastructure engineers build on. I designed
               EDB's feature-flag system on <strong>flagd / OpenFeature</strong>, migrating off a hosted
-              SaaS to remove recurring licence cost and unblock on-premises customers, and I filed a
+              SaaS to remove recurring licence cost and unblock on-premises customers, and filed a
               credited security advisory upstream while running it in production. More recently I built
-              an <strong>MCP server</strong> that exposes EDB database clusters to AI agents through a
+              an <strong>MCP server</strong> exposing EDB database clusters to AI agents through a
               standardised tool interface.
+            </p>
+            <p>
+              The nine and a half years before that are the reason any of it works: a decade of
+              component libraries, design systems, code review and mentoring, across healthcare portals,
+              brand protection, fintech dashboards and augmented reality.
             </p>
           </div>
 
@@ -189,11 +271,15 @@
             </li>
             <li class="fact">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-              <span><strong>Currently</strong>Senior SDE, EnterpriseDB</span>
+              <span><strong>Currently</strong>Senior SDE, EnterpriseDB — 6 years</span>
             </li>
             <li class="fact">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
               <span><strong>Security</strong>Credited advisory GHSA-4c5f-9mj4-m247 (flagd)</span>
+            </li>
+            <li class="fact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+              <span><strong>Conferences</strong>PgConf Bangalore 2023 · KubeCon Hyderabad 2025</span>
             </li>
             <li class="fact">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12M7 2h1"/><path d="m22 22-5-10-5 10M14 18h6"/></svg>
@@ -210,9 +296,10 @@
         <header class="section__head">
           <span class="section__index">02</span>
           <h2 class="section__title">Skills &amp; tooling</h2>
+          <p class="section__note">Accumulated 2017 → 2026</p>
         </header>
 
-        <div class="skills" data-reveal>
+        <div class="skills" data-reveal data-stagger="60">
           <article class="card skill-group">
             <h3 class="skill-group__title">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
@@ -233,19 +320,20 @@
             </h3>
             <ul class="skill-group__list">
               <li class="tag">Redux Toolkit</li><li class="tag">React Query</li><li class="tag">Zustand</li>
-              <li class="tag">WebSockets</li><li class="tag">Server-Sent Events</li><li class="tag">Data Visualization</li>
+              <li class="tag">WebSockets</li><li class="tag">Server-Sent Events</li>
+              <li class="tag">Data Visualization</li><li class="tag">Code Splitting</li>
             </ul>
           </article>
 
           <article class="card skill-group">
             <h3 class="skill-group__title">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg>
-              Backend
+              Backend &amp; APIs
             </h3>
             <ul class="skill-group__list">
               <li class="tag">Node.js</li><li class="tag">Go</li><li class="tag">Protobuf</li>
               <li class="tag">Express</li><li class="tag">Python</li><li class="tag">REST APIs</li>
-              <li class="tag">Microservices</li>
+              <li class="tag">Microservices</li><li class="tag">OAuth / JWT</li><li class="tag">Swagger</li>
             </ul>
           </article>
 
@@ -255,8 +343,9 @@
               Infrastructure &amp; cloud
             </h3>
             <ul class="skill-group__list">
-              <li class="tag">Docker</li><li class="tag">Kubernetes</li><li class="tag">CI/CD</li>
-              <li class="tag">Git</li><li class="tag">AWS</li><li class="tag">GCP</li><li class="tag">Azure</li>
+              <li class="tag">Docker</li><li class="tag">Kubernetes</li><li class="tag">OpenShift</li>
+              <li class="tag">Jenkins</li><li class="tag">CI/CD</li><li class="tag">Git</li>
+              <li class="tag">AWS</li><li class="tag">GCP</li><li class="tag">Azure</li>
             </ul>
           </article>
 
@@ -266,8 +355,8 @@
               Databases
             </h3>
             <ul class="skill-group__list">
-              <li class="tag">PostgreSQL</li><li class="tag">MongoDB</li>
-              <li class="tag">Schema Design</li><li class="tag">Query Optimization</li>
+              <li class="tag">PostgreSQL</li><li class="tag">MongoDB</li><li class="tag">Redis</li>
+              <li class="tag">MySQL</li><li class="tag">Schema Design</li><li class="tag">Query Optimization</li>
             </ul>
           </article>
 
@@ -300,9 +389,29 @@
             </h3>
             <ul class="skill-group__list">
               <li class="tag">MCP servers</li><li class="tag">Agent workflows</li>
-              <li class="tag">Claude</li><li class="tag">GitHub Copilot</li><li class="tag">Gemini</li>
+              <li class="tag">Claude Code</li><li class="tag">GitHub Copilot</li><li class="tag">Gemini</li>
             </ul>
           </article>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <span class="marquee__item">React</span><span class="marquee__item">TypeScript</span>
+            <span class="marquee__item">PostgreSQL</span><span class="marquee__item">Kubernetes</span>
+            <span class="marquee__item">OpenFeature</span><span class="marquee__item">WebSockets</span>
+            <span class="marquee__item">Playwright</span><span class="marquee__item">Node.js</span>
+            <span class="marquee__item">Go</span><span class="marquee__item">MCP</span>
+            <span class="marquee__item">Docker</span><span class="marquee__item">Design Systems</span>
+            <span class="marquee__item">Micro-frontends</span><span class="marquee__item">Redux Toolkit</span>
+            <!-- Duplicated so the -50% translation loops seamlessly. -->
+            <span class="marquee__item">React</span><span class="marquee__item">TypeScript</span>
+            <span class="marquee__item">PostgreSQL</span><span class="marquee__item">Kubernetes</span>
+            <span class="marquee__item">OpenFeature</span><span class="marquee__item">WebSockets</span>
+            <span class="marquee__item">Playwright</span><span class="marquee__item">Node.js</span>
+            <span class="marquee__item">Go</span><span class="marquee__item">MCP</span>
+            <span class="marquee__item">Docker</span><span class="marquee__item">Design Systems</span>
+            <span class="marquee__item">Micro-frontends</span><span class="marquee__item">Redux Toolkit</span>
+          </div>
         </div>
       </div>
     </section>
@@ -313,13 +422,14 @@
         <header class="section__head">
           <span class="section__index">03</span>
           <h2 class="section__title">Experience</h2>
+          <p class="section__note">Two companies · 9.5 years</p>
         </header>
 
-        <div class="timeline">
+        <div class="timeline" id="timeline">
           <article class="role" data-reveal>
             <header class="role__head">
               <h3 class="role__company">EDB (EnterpriseDB)</h3>
-              <span class="role__period">Jun 2020 — Aug 2026 · Pune, India</span>
+              <span class="role__period">Jun 2020 — Aug 2026 · 6 yrs · Pune, India</span>
             </header>
             <p class="role__titles">
               Senior SDE (2024–2026) · Staff SDE 1B / 1A (2021–2024) · Software Engineer (2020–2021)
@@ -380,7 +490,7 @@
           <article class="role" data-reveal>
             <header class="role__head">
               <h3 class="role__company">Aexonic Technologies</h3>
-              <span class="role__period">Apr 2017 — May 2020 · Pune, India</span>
+              <span class="role__period">Apr 2017 — May 2020 · 3 yrs · Pune, India</span>
             </header>
             <p class="role__titles">
               Lead Front End Developer (2019–2020) · Software Engineer / Trainee (2017–2019)
@@ -408,15 +518,225 @@
       </div>
     </section>
 
+    <!-- ===== Notable projects =========================================== -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="section__index">04</span>
+          <h2 class="section__title">Notable projects</h2>
+          <p class="section__note">Newest first · 2017 → today</p>
+        </header>
+
+        <div class="grid-cards" data-reveal data-stagger="60">
+          <article class="card entry entry--flagship">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.2 9.2 4.5 4.5 0 0 0 7 18.98"/><path d="M12 12v9M9 18l3 3 3-3"/></svg>
+                EDB Postgres AI Console
+              </h3>
+              <span class="entry__when">01/2021 — now</span>
+            </div>
+            <p class="entry__desc">
+              Formerly BigAnimal. The gateway to EDB Postgres AI — a single pane of glass over every
+              operation: create and manage databases, view health and performance, and bring up
+              Lakehouse Analytics and AI/ML capabilities. Microservices architecture with a monorepo
+              managing multiple streams.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">React</span><span class="tag">TypeScript</span>
+              <span class="tag">WebSockets</span><span class="tag">Kubernetes</span>
+              <span class="tag">Monorepo</span>
+            </div>
+          </article>
+
+          <article class="card entry entry--flagship">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4M9 14h.01M15 14h.01M2 13h2M20 13h2"/></svg>
+                MCP server for DB clusters
+              </h3>
+              <span class="entry__when">2026</span>
+            </div>
+            <p class="entry__desc">
+              A Model Context Protocol server exposing EDB database clusters to AI agents, so assistants
+              can query and retrieve data through a standardised, permissioned tool interface.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">MCP</span><span class="tag">Node.js</span><span class="tag">AI agents</span>
+            </div>
+          </article>
+
+          <a class="card entry" href="https://github.com/pgadmin-org/pgadmin4/commits/master/?author=pramod-ahire" target="_blank" rel="noopener noreferrer">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+                pgAdmin 4
+              </h3>
+              <span class="entry__when">07/2020 — 02/2021</span>
+            </div>
+            <p class="entry__desc">
+              Open-source contribution to the PostgreSQL application for managing, designing and
+              maintaining databases. Built the database view with schema in a tree structure.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">Open source</span><span class="tag">PostgreSQL</span><span class="tag">Python</span>
+            </div>
+            <span class="entry__link">
+              View commits
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </span>
+          </a>
+
+          <article class="card entry">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-5 3 3 5-7"/></svg>
+                Postgres Enterprise Manager
+              </h3>
+              <span class="entry__when">07/2020 — 12/2020</span>
+            </div>
+            <p class="entry__desc">
+              A comprehensive database design and management system built for novice and experienced
+              Postgres users alike, with a graphical interface that simplifies creating, maintaining and
+              using database objects.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">React</span><span class="tag">Data Viz</span><span class="tag">PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.3 3-5.5A5.5 5.5 0 0 0 12 5.3 5.5 5.5 0 0 0 2 8.5c0 2.2 1.5 4 3 5.5l7 7Z"/></svg>
+                Tricura — Healthcare Portal
+              </h3>
+              <span class="entry__when">08/2019 — 08/2020</span>
+            </div>
+            <p class="entry__desc">
+              A USA-based healthcare and care-provider portal built to support elderly and orphaned
+              people through their care networks.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">SaaS</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="m3 7 9 5 9-5M12 22V12"/></svg>
+                Instant-AR
+              </h3>
+              <span class="entry__when">04/2019 — 07/2019</span>
+            </div>
+            <p class="entry__desc">
+              An augmented-reality web application providing an interface to design custom virtual
+              objects on images, shown while augmenting. Built as a photo studio for annotating images
+              for later use.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">Augmented Reality</span><span class="tag">JavaScript</span><span class="tag">Canvas</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+                SEPIO-TruSale
+              </h3>
+              <span class="entry__when">02/2019 — 03/2019</span>
+            </div>
+            <p class="entry__desc">
+              SaaS web application protecting brands from counterfeiting — letting consumers authenticate
+              products and report fakes with a single click.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">Angular</span><span class="tag">SaaS</span><span class="tag">Brand protection</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/></svg>
+                BidMyStay
+              </h3>
+              <span class="entry__when">09/2018 — 01/2019</span>
+            </div>
+            <p class="entry__desc">
+              A booking application for properties, hotels, resorts and related stays, with bidding on
+              availability.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Booking</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+                Vistamoney
+              </h3>
+              <span class="entry__when">10/2017 — 08/2018</span>
+            </div>
+            <p class="entry__desc">
+              Web portal and BI reporting suite to manage, transact, purchase and sell gift cards across
+              the USA.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">Angular</span><span class="tag">BI reporting</span><span class="tag">Fintech</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                TMS — Time Management
+              </h3>
+              <span class="entry__when">04/2017 — 05/2017</span>
+            </div>
+            <p class="entry__desc">
+              An in-house web portal for hours and timesheet logging — the first project I shipped, in
+              my first month as an engineer.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">JavaScript</span><span class="tag">Internal tools</span>
+            </div>
+          </article>
+
+          <article class="card entry">
+            <div class="entry__head">
+              <h3 class="entry__title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 4v5"/></svg>
+                Website design &amp; maintenance
+              </h3>
+              <span class="entry__when">04/2017 — 09/2017</span>
+            </div>
+            <p class="entry__desc">
+              Designed and maintained static marketing sites including sepioproducts.com, medidots.inc
+              and DDW.
+            </p>
+            <div class="entry__meta">
+              <span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">Web design</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== Open source ================================================ -->
     <section class="section" id="open-source">
       <div class="wrap">
         <header class="section__head">
-          <span class="section__index">04</span>
+          <span class="section__index">05</span>
           <h2 class="section__title">Open source</h2>
         </header>
 
-        <div class="grid-cards" data-reveal>
+        <div class="grid-cards" data-reveal data-stagger="70">
           <a class="card entry" href="https://github.com/pgadmin-org/pgadmin4" target="_blank" rel="noopener noreferrer">
             <h3 class="entry__title">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
@@ -462,76 +782,7 @@
       </div>
     </section>
 
-    <!-- ===== Projects =================================================== -->
-    <section class="section" id="projects">
-      <div class="wrap">
-        <header class="section__head">
-          <span class="section__index">05</span>
-          <h2 class="section__title">Selected projects</h2>
-        </header>
-
-        <div class="grid-cards" data-reveal>
-          <article class="card entry">
-            <h3 class="entry__title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.2 9.2 4.5 4.5 0 0 0 7 18.98"/><path d="M12 12v9M9 18l3 3 3-3"/></svg>
-              EDB Postgres AI Console
-            </h3>
-            <p class="entry__desc">
-              Formerly BigAnimal — the centralised cloud control plane for PostgreSQL management: cluster
-              provisioning, telemetry, encryption, and AI-driven insights. I lead the frontend.
-            </p>
-            <div class="entry__meta">
-              <span class="tag">React</span><span class="tag">TypeScript</span>
-              <span class="tag">WebSockets</span><span class="tag">Kubernetes</span>
-            </div>
-          </article>
-
-          <article class="card entry">
-            <h3 class="entry__title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-5 3 3 5-7"/></svg>
-              Postgres Enterprise Manager
-            </h3>
-            <p class="entry__desc">
-              Enterprise application for PostgreSQL design, monitoring, administration, and management —
-              dense operational dashboards over live database telemetry.
-            </p>
-            <div class="entry__meta">
-              <span class="tag">React</span><span class="tag">Data Viz</span><span class="tag">PostgreSQL</span>
-            </div>
-          </article>
-
-          <article class="card entry">
-            <h3 class="entry__title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4M9 14h.01M15 14h.01M2 13h2M20 13h2"/></svg>
-              MCP server for database clusters
-            </h3>
-            <p class="entry__desc">
-              A Model Context Protocol server exposing EDB database clusters to AI agents, so assistants
-              can query and retrieve data through a standardised, permissioned tool interface.
-            </p>
-            <div class="entry__meta">
-              <span class="tag">MCP</span><span class="tag">Node.js</span><span class="tag">AI agents</span>
-            </div>
-          </article>
-
-          <article class="card entry">
-            <h3 class="entry__title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v16"/></svg>
-              SaaS &amp; web platforms
-            </h3>
-            <p class="entry__desc">
-              Earlier product work across healthcare management (Tricura), brand protection
-              (SEPIO-TruSale), and financial analytics (Vistamoney).
-            </p>
-            <div class="entry__meta">
-              <span class="tag">React</span><span class="tag">Angular</span><span class="tag">Node.js</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Education & speaking ======================================= -->
+    <!-- ===== Education & community ====================================== -->
     <section class="section" id="education">
       <div class="wrap">
         <header class="section__head">
@@ -539,7 +790,7 @@
           <h2 class="section__title">Education &amp; community</h2>
         </header>
 
-        <div class="meta-grid" data-reveal>
+        <div class="meta-grid" data-reveal data-stagger="70">
           <article class="card entry">
             <h3 class="entry__title">B.E. Computer Engineering</h3>
             <p class="entry__desc">
@@ -564,8 +815,9 @@
         <p class="eyebrow eyebrow--center">Available for senior frontend roles</p>
         <h2 class="contact__title">Let's build something</h2>
         <p class="contact__blurb">
-          If you're working on a product where the interface has to hold up under real operational
-          load, I'd like to hear about it.
+          Nine and a half years in, I'm still most interested in the same thing: products where the
+          interface has to hold up under real operational load. If that's what you're building, I'd
+          like to hear about it.
         </p>
 
         <div class="contact__actions">
